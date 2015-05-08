@@ -1,6 +1,9 @@
 <table>
 	<h3>Search results</h3>
 	<% i=0%>
+	<%if @search_results.empty?%>
+	 <h3>No Images were found for your search criteria!!!</h3>
+	<%end%>
 	<%@search_results.each do |gif|%>
 	<% i+=1%>
 	<%if i % 3 == 1%>
