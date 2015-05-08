@@ -1,5 +1,5 @@
 # giphy
-It'a a project which is functioning based on Giphy API
+It'a a ROR project which is functioning based on Giphy API
 
 In this project I have added following features of Giphy API.
 
