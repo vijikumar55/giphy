@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Giphy</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="col-md-8 col-md-offset-2 text-center header">
+	    	<h3>GIPHY</h3>
+	   	</div>
+<%= yield %>
+
+</body>
+<style>
+body {
+    background-color: #FFFFE0;
+} 
+</style>
+</html>

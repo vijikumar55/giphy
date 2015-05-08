@@ -1,0 +1,28 @@
+<div class="container">
+	<div class="row">
+		<fieldset>
+			<label for="first_name">Search GIFS:</label>
+			<input type="text" id="search" name="search_string">
+			<button type="submit" value="Submit">
+				Search
+			</button>
+		</fieldset>
+		</br></br>
+		<div id="gifs_view">
+			<h3>Currently trending GIFs</h3>
+			<table>
+				<% i=0%>
+				<%@trending.each do |gif|%>
+				<% i+=1%>
+				<%if i % 3 == 1%>
+				<tr>
+					<%end%>
+					<td><img src=<%= gif%> height="150" width="150"></td>
+					<%if i % 3 == 0%>
+				</tr>
+				<%end%>
+				<%end%>
+			</table>
+		</div>
+	</div>
+</div>
