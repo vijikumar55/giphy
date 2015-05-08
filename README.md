@@ -9,4 +9,6 @@ In this project I have added following features of Giphy API.
 
 To start the application just run the following command in console
 
- rails s
+     bundle install
+
+     rails s
